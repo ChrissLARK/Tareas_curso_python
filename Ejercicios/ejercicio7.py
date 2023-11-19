@@ -9,16 +9,15 @@ Realiza un programa que lea dos números por teclado y permite elegir entre 3 op
 
 
 
-# Función para mostrar el menú y obtener la opción del usuario
+# Fmostramos el menú
 def mostrar_menu():
     print("¿Qué operación quieres realizar?")
-    print("1. Mostrar suma de los dos números")
-    print("2. Mostrar resta (primer número menos segundo número)")
-    print("3. Mostrar multiplicación de los dos números")
+    print("1.- Mostrar suma de los dos números")
+    print("2.- Mostrar resta (primer número menos segundo número)")
+    print("3.- Mostrar multiplicación de los dos números")
     opcion = input("Elige una opción (1/2/3): ")
     return opcion
 
-# Función para realizar la operación seleccionada
 def realizar_operacion(opcion, num1, num2):
     if opcion == '1':
         resultado = num1 + num2
@@ -32,11 +31,12 @@ def realizar_operacion(opcion, num1, num2):
     else:
         print("Opción inválida")
 
-# Pedir al usuario que ingrese dos números
+# le pedimos que ingrese dos números
 numero1 = float(input("Ingresa el primer número: "))
 numero2 = float(input("Ingresa el segundo número: "))
 
-# Mostrar el menú y realizar la operación seleccionada
+''' finalmente, le motramos el menu y la operación que ha seleccinado'''
+
 opcion_elegida = mostrar_menu()
 realizar_operacion(opcion_elegida, numero1, numero2)
 
