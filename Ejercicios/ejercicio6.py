@@ -7,12 +7,9 @@ años puede entrar gratis, si tiene entre 4 y 18 años debe pagar $5 y si es may
 
 '''
 
-
-
-# Pedir al usuario que ingrese la edad del cliente
 edad = int(input("Ingresa la edad del cliente: "))
 
-# Calcular el precio de la entrada según la edad
+# precio de la entrada según la edad
 if edad < 4:
     precio_entrada = 0  # Menores de 4 años entran gratis
 elif 4 <= edad <= 18:
@@ -20,5 +17,6 @@ elif 4 <= edad <= 18:
 else:
     precio_entrada = 10  # Mayores de 18 años pagan $10
 
-# Mostrar el precio de la entrada al cliente
+# Mostrar el precio a la clientela 
+
 print(f"El precio de la entrada es: ${precio_entrada}")
